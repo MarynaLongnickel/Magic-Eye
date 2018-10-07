@@ -65,4 +65,6 @@ autostereogram = magic(depth_map, pattern)
 
 plt.figure(figsize=(26,20))
 plt.imshow(autostereogram, cmap = 'Reds')
+plt.grid(False)
+plt.axis('off')
 plt.show()
