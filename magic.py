@@ -46,7 +46,7 @@ def magic(depth_map, pattern, focal_length = 0.2):
 
     for r in range(autostereogram.shape[0]):
         for c in range(autostereogram.shape[1]):
-            # no values are shifted in the first row of tiles since
+            # no values are shifted in the first column of tiles since
             # it is a reference point
             if c < w:
                 autostereogram[r, c] = pattern[r % h, c]
